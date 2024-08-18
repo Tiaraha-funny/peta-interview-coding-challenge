@@ -44,3 +44,14 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+## Running the backend
+
+You have to run the backend while developing. On the backend folder do these if you hanven't yet:
+
+1. `sudo apt install python3.12-venv` to install the python3-venv package
+2. `python3 -m venv ~/myenv` to create a virtual environment
+3. `source ~/myenv/bin/activate` to activate the virtual environment
+4. `pip install flask to install` the Flask within the virtual environment
+5. `python app.py` or `python3 app.py`
+6. `flask_cors` provides CORS support for Flask applications, run `pip install flask-cors` to get it.

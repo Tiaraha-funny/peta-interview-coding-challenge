@@ -2,9 +2,11 @@ import { Link, Outlet } from "react-router-dom";
 
 function App() {
 	return (
-		<div>
-			<header className="flex justify-between p-4 bg-gray-200 text-gray-800">
-				<h1>Products</h1>
+		<div className="bg-gray-100">
+			<header className="flex px-4 items-center justify-between bg-gray-200 text-gray-800">
+				<h1>
+          <img width={60} height={60} src="../logo.png" alt="Product logo" />
+        </h1>
 				<nav>
 					<ul className="flex gap-4">
 						<li>

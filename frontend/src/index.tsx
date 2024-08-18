@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import Products, { loader as productsLoader } from "./Products";
+import AddProduct, { action } from "./AddProduct";
 
 const router = createBrowserRouter([
 	{
@@ -18,6 +19,13 @@ const router = createBrowserRouter([
 			},
 		],
 	},
+  {
+    path: "add",
+    action: action,
+    loader: productsLoader,
+    element: <AddProduct/>,
+    errorElement: <div>Page not found</div>,
+  }
 ]);
 const root = document.getElementById("root");
 if (root) {
